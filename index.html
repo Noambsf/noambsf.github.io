@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noâm Boussouf - Academic Profile</title>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #00367b; /* Navy blue from your CV */
+            --light-blue: #e8f4fd; /* Light blue accent */
+            --text-main: #333333;
+            --text-muted: #666666;
+            --bg-main: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Top Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background-color: var(--bg-main);
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        nav .logo { font-weight: 700; font-size: 1.2rem; color: var(--primary-color); }
+        nav .menu a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        nav .menu a:hover { color: var(--primary-color); }
+
+        /* Main Layout */
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            gap: 50px;
+        }
+
+        /* Left Sidebar */
+        .sidebar {
+            flex: 0 0 280px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid var(--light-blue);
+        }
+
+        .sidebar h1 { margin: 0; font-size: 1.8rem; color: var(--primary-color); }
+        .sidebar h2 { margin: 5px 0 20px 0; font-size: 1rem; color: var(--text-muted); font-weight: 400; }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-links a {
+            color: var(--text-main);
+            font-size: 1.2rem;
+            transition: color 0.2s;
+        }
+        
+        .social-links a:hover { color: var(--primary-color); }
+
+        /* Right Content Area */
+        .content { flex: 1; }
+        
+        .content h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--light-blue);
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .content h3:first-child { margin-top: 0; }
+
+        /* Button */
+        .btn-download {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: var(--light-blue);
+            color: var(--primary-color);
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        
+        .btn-download:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Grid for Interests & Education */
+        .grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        ul.custom-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.custom-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul.custom-list li::before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Education & Experience Items */
+        .timeline-item { margin-bottom: 20px; }
+        .timeline-item h4 { margin: 0 0 5px 0; font-size: 1.1rem; }
+        .timeline-item .meta { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 8px; }
+        
+        /* Publications */
+        .pub-item { margin-bottom: 20px; }
+        .pub-title { font-weight: 600; }
+        .pub-authors { color: var(--text-muted); font-size: 0.95rem; }
+        .pub-venue { font-style: italic; font-size: 0.95rem; }
+        .pub-links a { font-size: 0.85rem; color: var(--primary-color); text-decoration: none; margin-right: 15px; font-weight: 600; }
+
+        /* Responsive */
+        @media (max-width: 850px) {
+            .container { flex-direction: column; }
+            .sidebar { flex: none; }
+            .grid-2col { grid-template-columns: 1fr; }
+            nav .menu { display: none; } /* Simplified for mobile */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <nav>
+        <div class="logo">Noâm Boussouf</div>
+        <div class="menu">
+            <a href="#about">About</a>
+            <a href="#publications">Publications</a>
+            <a href="#experience">Experience</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <!-- Replace with your actual photo URL -->
+            <img src="https://via.placeholder.com/200x200" alt="Noâm Boussouf" class="profile-img">
+            <h1>Noâm Boussouf</h1>
+            <h2>Graduate Researcher in Computer Science</h2>
+            <h2>Keio University (HVRL) & Centrale Nantes</h2>
+            
+            <div class="social-links">
+                <a href="mailto:noam.boussouf@keio.jp" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/Noambsf" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </aside>
+
+        <!-- Right Content -->
+        <main class="content">
+            
+            <section id="about">
+                <h3>About Me</h3>
+                <p>I am a graduate researcher in Computer Science in a dual-degree program between Keio University (HVRL) and École Centrale de Nantes, with a theoretical foundation from PSL University (M2 IASD). My research focuses on monocular 3D scene reconstruction and precise event spotting in sports, as well as generative domain adaptation.</p>
+                <a href="#" class="btn-download"><i class="fas fa-download"></i> Download CV</a>
+            </section>
+
+            <section class="grid-2col">
+                <div>
+                    <h3>Interests</h3>
+                    <ul class="custom-list">
+                        <li>3D Scene Understanding</li>
+                        <li>Physics-Informed Vision</li>
+                        <li>Monocular 3D Reconstruction</li>
+                        <li>Generative Domain Adaptation</li>
+                        <li>Spatio-Temporal Event Spotting</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Education</h3>
+                    <div class="timeline-item">
+                        <h4>M.Sc. in Computer Science</h4>
+                        <div class="meta"><i class="fas fa-graduation-cap"></i> Keio University, Japan (2025 - 2027)</div>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Master 2 IASD (M.Sc. AI)</h4>
+                        <div class="meta"><i class="fas fa-graduation-cap"></i> PSL University, France (2024 - 2025)</div>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Diplôme d'Ingénieur (M.Eng.)</h4>
+                        <div class="meta"><i class="fas fa-graduation-cap"></i> École Centrale de Nantes, France (2022 - 2027)</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="publications">
+                <h3>Publications</h3>
+                
+                <div class="pub-item">
+                    <div class="pub-title">Volley3D: Unified 3D Full-Sequence Reconstruction from Monocular Broadcasts</div>
+                    <div class="pub-authors"><b>Noâm Boussouf</b>, Adrien Maglo, Mohamed Chaouch, Hideo Saito</div>
+                    <div class="pub-venue">Under review at IEEE/CVF WACV 2027 (Main Conference)</div>
+                    <div class="pub-links">
+                        <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#"><i class="fas fa-code"></i> Code</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-title">PoseConvSpot: Overcoming Domain Shifts in Precise Event Spotting for Sports Videos via Pose-Only Spatio-Temporal Regression</div>
+                    <div class="pub-authors"><b>Noâm Boussouf</b>, Adrien Maglo, Mohamed Chaouch, Paul Pham Dang, Hideo Saito</div>
+                    <div class="pub-venue">ACM MMSports '26 (in conjunction with ACM Multimedia)</div>
+                    <div class="pub-links">
+                        <a href="https://noambsf.github.io/PoseConvSpot"><i class="fas fa-globe"></i> Project Page</a>
+                        <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#"><i class="fas fa-code"></i> Code</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience">
+                <h3>Experience</h3>
+                
+                <div class="timeline-item">
+                    <h4>Graduate Research Assistant</h4>
+                    <div class="meta">Keio University (HVRL) | Oct 2025 - Present</div>
+                    <p>Developing monocular 3D sports reconstruction frameworks from broadcast footage. Authored two first-author papers on precise event spotting and physics-corrected 3D trajectory lifting.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Computer Vision Research Intern</h4>
+                    <div class="meta">GoPro, Paris | Apr 2025 - Sep 2025</div>
+                    <p>Investigated unpaired Image-to-Image translation (CycleGAN with DINO priors) to synthesize nighttime training data from daytime imagery for extreme low-light object detection.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Computer Vision Research Intern</h4>
+                    <div class="meta">CEA LIST, Université Paris-Saclay | Apr 2024 - Aug 2024</div>
+                    <p>Conducted research on single-view 3D reconstruction of collective sports scenes using camera calibration and multi-player tracking.</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
