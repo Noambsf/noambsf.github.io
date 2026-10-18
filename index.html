@@ -148,6 +148,23 @@
             left: 0;
             font-weight: bold;
         }
+        /* Badges de mots-clés pour les expériences */
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        
+        .tag {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            background-color: var(--light-blue);
+            padding: 3px 10px;
+            border-radius: 12px;
+            letter-spacing: 0.02em;
+        }
 
         /* Education & Experience Items */
         .timeline-item { margin-bottom: 20px; }
@@ -203,8 +220,8 @@
             
             <section id="about">
                 <h3>About Me</h3>
-                <p>I am a graduate researcher in Computer Science at Keio University (<a href="http://www.hvrl.ics.keio.ac.jp/HVRL">HVRL</a>) and Ecole Centrale de Nantes, with a theoretical ML foundation from PSL University (<a href="https://www.masteriasd.eu/en/">M2 IASD</a>). Research aspirations center on developing Computer Vision methods for medical image analysis, with particular interests in unsupervised and representation learning for domain adaptation, anomaly detection, and segmentation, while enthusiastic about exploring the broader spectrum of Computer Vision challenges for medical applications.</p>
-                <a href="BOUSSOUF_Noam_academic_CV.pdf" class="btn-download"><i class="fas fa-download"></i> CV</a>
+                <p>I am a graduate researcher in Computer Science at Keio University (<a href="http://www.hvrl.ics.keio.ac.jp/HVRL">HVRL</a>) and Ecole Centrale de Nantes, with a theoretical ML foundation from PSL University (<a href="https://www.masteriasd.eu/en/">M2 IASD</a>). Research aspirations center on developing Computer Vision methods for medical image analysis, with particular interests in unsupervised and representation learning for domain adaptation, anomaly detection, and segmentation.</p>
+                <a href="BOUSSOUF_Noam_academic_CV.pdf" class="btn-download"><i class="fas fa-file-pdf"></i> CV</a>
             </section>
 
             <section class="grid-2col">
@@ -281,26 +298,53 @@
                 
                 <div class="timeline-item">
                     <h4>Graduate Research Assistant</h4>
-                    <div class="meta">Keio University (HVRL) | Oct 2025 - Present</div>
-                    <p>Developing monocular 3D sports reconstruction frameworks from broadcast footage. Authored two first-author papers on precise event spotting and physics-corrected 3D trajectory lifting.</p>
+                    <div class="meta">Keio University (HVRL) | Oct 2025 - September 2026</div>
+                    <p>Developed a comprehensive monocular 3D reconstruction framework tailored to broadcast volleyball without 3D supervision, unifying physics-informed jump modeling with a context-aware 3D ball trajectory lifting pipeline featuring a novel sub-trajectory segmentation architecture and a heuristic collision-matching algorithm.
+                    The framework integrates <a href="https://noambsf.github.io/PoseConvSpot">PoseConvSpot</a>, our proposed pose-based precise event spotting method demonstrating high data efficiency and strong robustness to both pixel-level domain shifts and multi-player interaction ambiguities. More details are available on the project pages.</p>
+                    <div class="tag-container">
+                        <span class="tag">Monocular 3D Reconstruction</span>
+                        <span class="tag">Precise Event Spotting</span>
+                        <span class="tag">Scene Understanding</span>
+                        <span class="tag">Domain Generalization</span>
+                        <span class="tag">Data-efficient Deep Learning</span>
+                    </div>
                 </div>
 
                 <div class="timeline-item">
-                    <h4>Computer Vision Research Intern</h4>
-                    <div class="meta">GoPro, Paris | Apr 2025 - Sep 2025</div>
-                    <p>Investigated unpaired Image-to-Image translation (CycleGAN with DINO priors) to synthesize nighttime training data from daytime imagery for extreme low-light object detection.</p>
+                    <h4>Master Thesis - Computer Vision Research Intern</h4>
+                    <div class="meta">PSL University - GoPro, Paris | Apr 2025 - Sep 2025</div>
+                    <p>Conducted research on unsupervised Image-to-Image (I2I) translation techniques to synthesize low-light training distributions, tackling extreme nighttime data scarcity for image denoising and object detection. Main research contributions included leveraging representation learning methods to improve existing I2I translation models.</p>
+                    <div class="tag-container">
+                        <span class="tag">Unsupervised Domain Adaptation</span>
+                        <span class="tag">Representation Learning</span>
+                        <span class="tag">Generative Models</span>
+                        <span class="tag">Image Denoising</span>
+                        <span class="tag">Object Detection</span>
+                        <span class="tag">Computational Photography</span>
+                    </div>
                 </div>
 
                 <div class="timeline-item">
                     <h4>Computer Vision Research Intern</h4>
                     <div class="meta">CEA LIST, Université Paris-Saclay | Apr 2024 - Aug 2024</div>
-                    <p>Conducted research on single-view 3D reconstruction of collective sports scenes using camera calibration and multi-player tracking.</p>
+                    <p>Researched single-view dynamic scene understanding from broadcast video by combining dynamic camera calibration, multi-player tracking, and 3D human pose estimation under projective ambiguity. This research laid the foundations for the <a href="https://noambsf.github.io/Volley3D">Volley3D</a> research project.</p>
+                    <div class="tag-container">
+                        <span class="tag">Monocular 3D Reconstruction</span>
+                        <span class="tag">Human Pose Estimation</span>
+                        <span class="tag">Multi-Object Tracking</span>
+                        <span class="tag">Camera Calibration</span>
+                        <span class="tag">Temporal Action Localization</span>
+                    </div>
                 </div>
 
                 <div class="timeline-item">
-                    <h4>Machile Learning Research Project</h4>
-                    <div class="meta"> Nantes University Hospital | Oct 2023 - Mar 2024</div>
-                    <p>Conducted research on single-view 3D reconstruction of collective sports scenes using camera calibration and multi-player tracking.</p>
+                    <h4>Machine Learning Research Project</h4>
+                    <div class="meta">Nantes University Hospital (CHU de Nantes) | Oct 2023 - Mar 2024</div>
+                    <p>Collaborated with clinical research teams to evaluate and train machine learning models predicting chronic lung transplant rejection on patient cohort data, assisting doctoral research.</p>
+                    <div class="tag-container">
+                        <span class="tag">Medical Data Analysis</span>
+                        <span class="tag">Clinical AI</span>
+                    </div>
                 </div>
             </section>
 
