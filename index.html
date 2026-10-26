@@ -220,7 +220,9 @@
             
             <section id="about">
                 <h3>About Me</h3>
-                <p>I am a graduate researcher in Computer Science at Keio University (<a href="http://www.hvrl.ics.keio.ac.jp/HVRL">HVRL</a>) and Ecole Centrale de Nantes, with a theoretical ML foundation from PSL University (<a href="https://www.masteriasd.eu/en/">M2 IASD</a>). Research aspirations center on developing Computer Vision methods for medical image analysis, with particular interests in unsupervised and representation learning for domain adaptation, anomaly detection, and segmentation.</p>
+                <p>I am a graduate researcher in Computer Science at Keio University (<a href="http://www.hvrl.ics.keio.ac.jp/HVRL">HVRL</a>) and Ecole Centrale de Nantes, with a theoretical ML foundation from PSL University (<a href="https://www.masteriasd.eu/en/">M2 IASD</a>). My research interests lie in computer vision, particularly learning task-relevant visual representations that generalize across diverse data distributions under limited supervision.
+
+                I am especially interested in self- and semi-supervised learning and domain generalization, with a growing focus on biomedical imaging. My current research includes particle picking in cryo-electron microscopy, while my previous work has explored robust visual perception, monocular 3D reconstruction, and low-light image enhancement.</p>
                 <a href="BOUSSOUF_Noam_academic_CV.pdf" class="btn-download"><i class="fas fa-file-pdf"></i> CV</a>
             </section>
 
@@ -228,11 +230,11 @@
                 <div>
                     <h3>Interests</h3>
                     <ul class="custom-list">
-                        <li>Computer Vision for Medical Applications</li>
-                        <li>Unsupervised Learning</li>
-                        <li>Domain Adaptation</li>
+                        <li>Computer Vision for Biomedical Imaging</li>
+                        <li>Representation Learning</li>
+                        <li>Domain Generalization and Robustness</li>
+                        <li>Self- and Semi-Supervised Learning</li>
                         <li>Event Spotting</li>
-                        <li>Anomaly Detection</li>
                         <li>3D Scene Understanding</li>
                     </ul>
                 </div>
@@ -294,28 +296,84 @@
             </section>
 
             <section id="experience">
-                <h3>Recent Experiences</h3>
-                
+                <h3>Research Experience</h3>
+            
+                <!-- Keio University HVRL -->
                 <div class="timeline-item">
                     <h4>Graduate Research Assistant</h4>
-                    <div class="meta">Keio University (HVRL) | Oct 2025 - September 2026</div>
-                    <p>Developed a comprehensive monocular 3D reconstruction framework tailored to broadcast volleyball without 3D supervision, unifying physics-informed jump modeling with a context-aware 3D ball trajectory lifting pipeline featuring a novel sub-trajectory segmentation architecture and a heuristic collision-matching algorithm.
-                    The framework integrates <a href="https://noambsf.github.io/PoseConvSpot">PoseConvSpot</a>, our proposed pose-based precise event spotting method demonstrating high data efficiency and strong robustness to both pixel-level domain shifts and multi-player interaction ambiguities. More details are available on the project pages.</p>
+                    <div class="meta">
+                        Keio University (HVRL) | Oct 2025 - Present
+                    </div>
+            
+                    <p>
+                        <strong>Cryo-EM Particle Picking (Master's Thesis):</strong>
+                        Investigating deep unsupervised and semi-supervised learning
+                        methods for particle picking in cryo-electron microscopy.
+                        The project addresses the challenges of extreme image noise,
+                        limited expert annotations, and generalization across diverse
+                        datasets.
+                    </p>
+                    <div class="tag-container">
+                        <span class="tag">Biomedical Imaging</span>
+                        <span class="tag">Representation Learning</span>
+                        <span class="tag">Unsupervised Learning</span>
+                        <span class="tag">Semi-Supervised Learning</span>
+                    </div>
+            
+                    <p>
+                        <strong><a href="https://noambsf.github.io/Volley3D/">
+                            Volley3D</a> (First-Author Manuscript):</strong>
+                        Developed a framework for 3D volleyball-scene reconstruction
+                        from monocular broadcast footage without 3D supervision.
+                        Combined jump-aware player kinematics with 2D-to-3D ball
+                        trajectory reconstruction using TCN-based segmentation,
+                        collision matching, and a physics-based solver.
+                    </p>
                     <div class="tag-container">
                         <span class="tag">Monocular 3D Reconstruction</span>
+                        <span class="tag">Physics-Informed Modeling</span>
+                        <span class="tag">3D Scene Understanding</span>
+                    </div>
+            
+                    <p>
+                        <strong><a href="https://noambsf.github.io/PoseConvSpot/">
+                            PoseConvSpot</a> (Accepted for Oral Presentation at ACM MMSports 2026):</strong>
+                        Designed a pose-only spatiotemporal regression architecture
+                        using Strip Pooling, GRU, and Soft Gamma Loss for precise
+                        jump-event spotting. Improved mAP@3 by 14.1% under cross-arena
+                        evaluation compared with state-of-the-art RGB-based baselines.
+                    </p>
+                    <div class="tag-container">
                         <span class="tag">Precise Event Spotting</span>
-                        <span class="tag">Scene Understanding</span>
+                        <span class="tag">Spatiotemporal Modeling</span>
                         <span class="tag">Domain Generalization</span>
-                        <span class="tag">Data-efficient Deep Learning</span>
+                        <span class="tag">Data-Efficient Learning</span>
                     </div>
                 </div>
-
+            
+                <!-- GoPro Master's Thesis -->
                 <div class="timeline-item">
-                    <h4>Master Thesis - Computer Vision Research Intern</h4>
-                    <div class="meta">PSL University - GoPro, Paris | Apr 2025 - Sep 2025</div>
-                    <p>Conducted research on unsupervised Image-to-Image (I2I) translation techniques to synthesize low-light training distributions, tackling extreme nighttime data scarcity for image denoising and object detection. Main research contributions included leveraging representation learning methods to improve existing I2I translation models.</p>
+                    <h4>Computer Vision Research Intern — Master's Thesis</h4>
+                    <div class="meta">
+                        GoPro / PSL University | Apr 2025 - Sep 2025 | Paris, France
+                    </div>
+            
+                    <p>
+                        Investigated unsupervised image-to-image translation to synthesize
+                        nighttime training data from daytime imagery, addressing data
+                        scarcity in low-light vision. Enhanced CycleGAN with DINO-based
+                        structural priors to preserve scene structure during domain
+                        translation, alongside an RGB-to-RAW unprocessing pipeline.
+                    </p>
+            
+                    <p>
+                        Designed a dual-task evaluation protocol assessing synthetic
+                        domain transfer for both low-level image restoration
+                        (denoising metrics) and high-level perception (object detection mAP).
+                    </p>
+            
                     <div class="tag-container">
-                        <span class="tag">Unsupervised Domain Adaptation</span>
+                        <span class="tag">Unsupervised Learning</span>
                         <span class="tag">Representation Learning</span>
                         <span class="tag">Generative Models</span>
                         <span class="tag">Image Denoising</span>
@@ -323,11 +381,27 @@
                         <span class="tag">Computational Photography</span>
                     </div>
                 </div>
-
+            
+                <!-- CEA LIST -->
                 <div class="timeline-item">
                     <h4>Computer Vision Research Intern</h4>
-                    <div class="meta">CEA LIST, Université Paris-Saclay | Apr 2024 - Aug 2024</div>
-                    <p>Researched single-view dynamic scene understanding from broadcast video by combining dynamic camera calibration, multi-player tracking, and 3D human pose estimation under projective ambiguity. This research laid the foundations for the <a href="https://noambsf.github.io/Volley3D">Volley3D</a> research project.</p>
+                    <div class="meta">
+                        CEA LIST, Université Paris-Saclay | Apr 2024 - Aug 2024 |
+                        Palaiseau, France
+                    </div>
+            
+                    <p>
+                        Investigated monocular 3D reconstruction of volleyball scenes
+                        from uncalibrated broadcast footage, combining player tracking,
+                        3D human pose estimation, and kinematic modeling.
+                    </p>
+            
+                    <p>
+                        Developed an initial physics-informed approach to handling
+                        jump-related ambiguities, laying the groundwork for subsequent
+                        research on pose-based jump-event spotting.
+                    </p>
+            
                     <div class="tag-container">
                         <span class="tag">Monocular 3D Reconstruction</span>
                         <span class="tag">Human Pose Estimation</span>
@@ -336,14 +410,23 @@
                         <span class="tag">Temporal Action Localization</span>
                     </div>
                 </div>
-
+            
+                <!-- Nantes University Hospital -->
                 <div class="timeline-item">
                     <h4>Machine Learning Research Project</h4>
-                    <div class="meta">Nantes University Hospital (CHU de Nantes) | Oct 2023 - Mar 2024</div>
-                    <p>Collaborated with clinical research teams to evaluate and train machine learning models predicting chronic lung transplant rejection on patient cohort data, assisting doctoral research.</p>
+                    <div class="meta">
+                        Nantes University Hospital (CHU de Nantes) |
+                        Oct 2023 - Mar 2024 | Nantes, France
+                    </div>
+            
+                    <p>
+                        Contributed to a clinical machine learning project predicting
+                        lung transplant rejection from patient data, assisting a doctoral researcher.
+                    </p>
+            
                     <div class="tag-container">
+                        <span class="tag">Clinical Machine Learning</span>
                         <span class="tag">Medical Data Analysis</span>
-                        <span class="tag">Clinical AI</span>
                     </div>
                 </div>
             </section>
